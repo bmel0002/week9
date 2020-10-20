@@ -1,7 +1,6 @@
 <html>
   <body>
-    <header>
-      <header>
+    <!-- <header>
         <div class="jumbotron text-center">
             <h1>Actors DB System</h1>
         </div>
@@ -9,9 +8,37 @@
           <a class="btn btn-primary" (click)="changePage()">{{page}}</a>
         </div>
     </header>
-    </header>
     <app-actor *ngIf="page=='Actor'"></app-actor>
     <app-movie *ngIf="page=='Movie'"></app-movie>
-    <app-movie-actor *ngIf="page=='MovieActor'"></app-movie-actor>
+    <app-movie-actor *ngIf="page=='MovieActor'"></app-movie-actor> -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/listactors" routerLinkActive="active">List Actors</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/addactor" routerLinkActive="active">Add Actor</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/updateactor" routerLinkActive="active">Update Actor</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/deleteactor" routerLinkActive="active">Delete Actor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/listmovies" routerLinkActive="active">List Movies</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/addmovie" routerLinkActive="active">Add Movie</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/deletemovie" routerLinkActive="active">Delete Movie</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/addmovieactor" routerLinkActive="active">Add Movie Actor</a>
+          </li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
   </body>
 </html>

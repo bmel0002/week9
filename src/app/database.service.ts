@@ -35,7 +35,7 @@ export class DatabaseService {
     return this.http.get("/movies");
   }
   getMovie(id: string) {
-    let url = "/movies" + id;
+    let url = "/movies/" + id;
     return this.http.get(url);
   }
   createMovie(data) {

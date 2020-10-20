@@ -6,17 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'movieAng';
+  title = 'movieAng3';
 
-  page = 'Actor';
+  // page = 'Actor';
 
-  changePage() {
-    if (this.page == 'Actor') {
-      this.page = 'Movie';
-    } else if (this.page == 'Movie') {
-      this.page = 'MovieActor';
-    } else if (this.page == 'MovieActor') {
-      this.page = 'Actor';
-    }
-  }
+  // changePage() {
+  //   if (this.page == 'Actor') {
+  //     this.page = 'Movie';
+  //   } else if (this.page == 'Movie') {
+  //     this.page = 'MovieActor';
+  //   } else if (this.page == 'MovieActor') {
+  //     this.page = 'Actor';
+  //   }
+  // }
 }
